@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: kheng-sovannak1578-myghjklda-certificate
+  namespace: kheng-sovannak1578-myghjklda
+spec:
+  secretName: kheng-sovannak1578-myghjklda-secret-tls
+  commonName: kheng-sovannak1578-myghjklda.assessify.org
+  dnsNames:
+  - kheng-sovannak1578-myghjklda.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
